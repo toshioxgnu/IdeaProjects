@@ -1,20 +1,20 @@
 package com.company;
 
 public class Nodo {
-    int value;
+    int data;
     Nodo sig;
 
-    public Nodo(int value) {
-        this.value = value;
+    public Nodo(int data, Nodo sig) {
+        this.data = data;
         sig = null;
     }
 
-    public int getValue() {
-        return value;
+    public int getData() {
+        return data;
     }
 
-    public void setValue(int value) {
-        this.value = value;
+    public void setData(int data) {
+        this.data = data;
     }
 
     public Nodo getSig() {

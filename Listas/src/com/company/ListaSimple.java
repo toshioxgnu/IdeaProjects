@@ -2,40 +2,15 @@ package com.company;
 
 
 public class ListaSimple {
-    private Nodo head;
+    Nodo node;
 
-    public ListaSimple(Nodo head) {
-        this.head = head;
+    public ListaSimple(Nodo node) {
+        this.node = node;
     }
 
-     //Insertar un elemento
-    public static ListaSimple Insert (ListaSimple lista, int data){
-        Nodo new_node = new Nodo(data);
-        new_node.sig = null;
-
-        if(lista.head == null){
-            lista.head = new_node;
-        }else{
-            Nodo last = lista.head;
-            while(last.sig != null){
-                last = last.sig;
-            }
-            last.sig = new_node;
-        }
-
-        return lista;
-
-    }
-
-    public static void Imprimir(ListaSimple lista){
-        Nodo currNodo = lista.head;
-
-        System.out.println("Lista :");
-        while(currNodo != null){
-            System.out.println(currNodo.data +
-                    " ");
-
-            currNodo = currNodo.sig;
+    public Nodo getSiguiente(){
+        if(sig != null){
+            return node;
         }
     }
 }
