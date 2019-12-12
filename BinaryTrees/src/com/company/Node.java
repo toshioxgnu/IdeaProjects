@@ -1,11 +1,11 @@
 package com.company;
 
-public class Tree {
+public class Node {
     int data;
-    Tree izq = null;
-    Tree der = null;
+    Node izq = null;
+    Node der = null;
 
-    public Tree(int data){
+    public Node(int data){
         this.data = data;
     }
 
